@@ -1,0 +1,29 @@
+.movie_display{
+  
+  font-family: sans-serif;
+}
+.container{
+  color: white;
+  background-color: rgb(41, 41, 41);
+  width: 350px;
+  padding: 15px;
+  padding: 10px;
+}
+.poster{
+  object-fit: contain;
+  width: 350px;
+  height: 450px;
+
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new{
+  display: flex;
+  background-color: rgb(52, 50, 50);
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-around;
+}
