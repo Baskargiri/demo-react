@@ -17,6 +17,7 @@ import IconButton from "@mui/material/IconButton";
 import { dark } from "@mui/material/styles/createPalette";
 import { AddMovie } from "./AddMovie";
 import { MovieDet } from "./MovieDet";
+import { Basicform } from "./Basicform";
 
 const movie_trailer = [
   {
@@ -176,6 +177,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<Homepage />}></Route>
             <Route path="/game" element={<Game />}></Route>
+            <Route path="/bf" element={<Basicform />}></Route>
             <Route
               path="/movie"
               element={
