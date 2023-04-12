@@ -149,17 +149,8 @@ export default function App() {
         <div className="movie_display">
           <AppBar position="static">
             <Toolbar>
-              <Button color="inherit" onClick={() => navigate("/")}>
-                Home
-              </Button>
               <Button color="inherit" onClick={() => navigate("/movie")}>
                 Movie
-              </Button>
-              <Button color="inherit" onClick={() => navigate("/game")}>
-                Add color
-              </Button>
-              <Button color="inherit" onClick={() => navigate("/tic")}>
-                TicTacToe
               </Button>
               <Button color="inherit" onClick={() => navigate("/movie/add")}>
                 Add movie
@@ -175,7 +166,12 @@ export default function App() {
             </Toolbar>
           </AppBar>
           <Routes>
-            <Route path="/" element={<Homepage />}></Route>
+            <Route
+              path="/"
+              element={
+                <Card movie_info={movie_info} setMovie_info={setMovie_info} />
+              }
+            ></Route>
             <Route path="/game" element={<Game />}></Route>
             <Route path="/bf" element={<Basicform />}></Route>
             <Route
